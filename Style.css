@@ -1,0 +1,442 @@
+body {
+    background: #494846;
+}
+
+#container {
+    Width: 85%;
+    Margin: 0 auto;
+    Min-width: 720 px;
+    Max-width:1000px;
+    }
+    
+#marca {
+    Height: 130px; 
+    Text-align: center;
+    Line-height: 65px;
+    font-size: 6em;
+    color: #FFDF65;
+    font-family: 'Righteous', cursive;
+    padding-top: 40px;}
+ 
+.marcasub {
+    Text-align: center;
+    font-size: 0.8em;
+    color: white;
+    font-family: 'Righteous', cursive;}
+    
+#content {
+    Width: 60%;
+    Float: left;
+    color: white; 
+     font: larger;}
+
+#navegation {
+     Width: 100%;
+     Float: left;
+     Padding-top: 60px;
+    Padding-bottom: 20px; }
+        
+
+ ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;}
+
+#navegation ul {
+    
+    float: left;}
+    #navegation ul li {
+    float: left;
+}
+
+#navegation ul a {
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    padding: 0.5em 3.3em;
+    margin: auto;
+    color: #FFDF65 ;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2em;
+}
+
+.hover-underline-animation{
+    display: inline-block;
+    position: relative;
+    color: white}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+   
+
+#rodape {
+    Clear: both;
+   Padding: 5px; }
+
+#content h1 {
+ Text-align: left;
+font-size: 4em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    clear: both;
+    float: left;
+    padding-top: 80px;
+    letter-spacing: 5px;
+}
+
+#content p {
+    Text-align: justify;
+   font-size: 1.4em;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    clear: both; 
+    line-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;}
+     
+#content3 img {
+    width: 600px;
+    height: 600px;
+    clear: both;}
+   
+#content3 {
+    Width: 40%;
+    Float: right; }
+
+.yellow {
+    color: #FFDF65;
+    
+}
+#flip1 {
+    color:white;
+    Text-align: left;
+    font-size: 5em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    clear: both;
+    float: left;
+    padding-top: 80px;
+     width:100%;
+     display:block;
+    font-family: 'Righteous', cursive;
+    line-height: 40px;}
+  
+    #flip {
+    height:85px;
+    overflow:hidden;}
+  
+  #flip > div > div {
+    color:#fff;
+     height:56px;
+    margin-bottom:45px;
+    display:inline-block}
+  
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+
+  .flipX {
+    animation: 1s anim-flipX ease infinite;
+    color: #FFDF65;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+  
+  .Buttonhome a{
+    text-decoration: none;
+    font-size: 1.8em;
+    background: #FFDF65;
+    color: #494846 ;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .Buttonhome {
+      padding-left: 200px;}
+
+.Buttonhome a:hover {
+    background: white;
+    
+} 
+
+#rodape {
+    
+   padding-top: 8px; 
+   background-color: #FFDF65; 
+   color: #494846 ;
+   font-size: medium;
+    font-family: 'Ubuntu Mono', monospace; 
+    text-align: center; }    
+
+    .imgContainer{
+        float: left;
+        padding-top: 25px;}
+        
+    .imgContainer:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+#contenthome p {
+        Text-align: left;
+       font-size: 1.4em;
+        color: white;
+        font-family: 'Ubuntu Mono', monospace;
+        clear: both; 
+        line-height: 40px;
+     
+        padding-bottom: 60px;
+       
+        width: 60%;
+    }
+
+#mywork {
+    color:white;
+    Text-align: left;
+    font-size: 5em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    clear: both;
+    float: left;
+    padding-top: 100px;
+     width:100%;
+     display:block;
+    font-family: 'Righteous', cursive;
+    line-height: 40px;
+
+}
+
+.coluna{
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+    
+    margin: 0;
+    
+    
+}
+
+.coluna1{
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+   
+    margin: 0;
+   
+   
+}
+  
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .row h2 {
+    
+       font-size: 2em;
+        color: white;
+        font-family: 'Ubuntu Mono', monospace;
+        clear: both; 
+        line-height: 40px;
+        width: 400px;
+        text-align: center;
+
+  }
+
+  .row h3 {
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    clear: both; 
+    line-height: 40px;
+    width: 400px;
+    text-align: center;
+ }
+
+ .row p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    clear: both; 
+    width: 400px;
+    text-align: center;
+ }
+
+ .coluna-link a {
+    font-size: 1.2em;
+    color: #FFDF65;
+    font-family: 'Ubuntu Mono', monospace;
+    clear: both; 
+    width: 400px;
+    text-align: center;
+    text-decoration: none;
+
+ }
+
+.coluna-link2 a {
+  font-size: 1.2em;
+  color: #FFDF65;
+  font-family: 'Ubuntu Mono', monospace;
+  clear: both; 
+  width: 400px;
+  text-align: right;
+  text-decoration: none;
+  
+
+}
+
+ #contact {
+    color:white;
+    Text-align: left;
+    font-size: 5em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    clear: both;
+    
+    padding-top: 40px;
+    width:100%;
+     display:block;
+    font-family: 'Righteous', cursive;
+    line-height: 40px; }
+
+    #contact1{
+        color: white;
+        width: 45%;
+        position: relative;
+        display: inline-block;
+        line-height: 40px;
+        font-family: 'Ubuntu Mono', monospace;
+       height: 45%;
+       
+       
+
+    }
+
+   /* FORM */
+
+   .feedback-input {
+    color:white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #FFDF65;
+    transition: all 0.3s;
+   padding: 13px;
+   float: right;
+    width:45%;
+    box-sizing: border-box;
+    outline:0;
+    clear: both;
+    display: flex;
+    height: 45%;
+    margin: 10px 0 15px 0 ;
+  }
+  
+  .feedback-input:focus { border:2px solid #FFDF65; }
+  
+  textarea {
+    height: 45%;
+    line-height: 150%;
+    resize:vertical;
+    float: right;
+    display: flex;
+  }
+  
+  [type="submit"] {
+    font-family: 'Ubuntu Mono', monospace;
+    width: 45%;
+    background:#FFDF65;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+    float: right;
+    clear: both;
+    display: flex;
+    
+    
+  }
+  [type="submit"]:hover { background:white;
+color:#FFDF65; }
+
+#rodape {
+    
+   padding-top: 50px;
+    width: 50%;
+    background-color: #494846; 
+    color: #FFDF65 ;
+    font-size: medium;
+     font-family: 'Ubuntu Mono', monospace; 
+     text-align: center;
+    clear: both; 
+position: absolute;} 
+
